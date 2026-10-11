@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL INSIDER | Premium Travel Agency</title>
+    <!-- تضمين مكتبة Tailwind CSS للتصميم العصري -->
+    <script src="https://jsdelivr.net"></script>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- شريط التنقل العلوي -->
+    <header class="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+            <div class="text-2xl font-bold text-white tracking-wider">TRAVEL<span class="text-amber-400">INSIDER</span>.</div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-white/90">
+                <a href="#destinations" class="hover:text-amber-400 transition">Destinations</a>
+                <a href="#services" class="hover:text-amber-400 transition">Our Services</a>
+                <a href="#about" class="hover:text-amber-400 transition">About Us</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold text-sm px-5 py-2.5 rounded-full transition shadow-lg">Plan Your Trip</a>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية للموقع -->
+    <section class="relative h-screen flex items-center justify-center bg-slate-900 overflow-hidden">
+        <img src="https://unsplash.com" alt="Luxury Travel Beach" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+            <span class="text-amber-400 font-semibold tracking-widest text-xs uppercase bg-amber-400/10 px-4 py-1.5 rounded-full border border-amber-400/20">Bespoke Travel Planning</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mt-6 mb-6 leading-tight">We Design Journeys, <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-400">Not Just Bookings.</span></h1>
+            <p class="text-lg text-slate-200/90 max-w-2xl mx-auto mb-10 font-light">From secluded tropical islands to vibrant cultural capitals, we curate personalized, seamless, and deeply enriching travel experiences tailored to your lifestyle.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#destinations" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-950 font-semibold px-8 py-4 rounded-xl transition shadow-xl">Explore Destinations</a>
+                <a href="#services" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/25 backdrop-blur-sm transition">Our Services</a>
+            </div>
+        </div>
+
+        <!-- الإحصائيات أسفل الواجهة -->
+        <div class="absolute bottom-12 left-0 w-full z-10 hidden lg:block">
+            <div class="max-w-5xl mx-auto grid grid-cols-3 gap-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center text-white">
+                <div>
+                    <div class="text-3xl font-bold text-amber-400">1,200+</div>
+                    <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider">Curated Trips</div>
+                </div>
+                <div class="border-x border-white/10">
+                    <div class="text-3xl font-bold text-amber-400">40+</div>
+                    <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider">Global Destinations</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-amber-400">24/7</div>
+                    <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider">On-Trip Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الوجهات السياحية المميزة -->
+    <section id="destinations" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Trending Destinations</h2>
+            <p class="mt-4 text-slate-600">Handpicked immersive getaways chosen by our travel experts for this season.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://unsplash.com" alt="Bali" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-950">Tropical Paradise, Bali</h3>
+                    <p class="text-slate-600 text-sm mt-2">Experience serene temples, lush rice terraces, and ultra-luxury private villa resorts.</p>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-amber-600 font-semibold text-sm">From $1,499</span>
+                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600 transition">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://unsplash.com" alt="Kyoto" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-950">Cultural Heritage, Kyoto</h3>
+                    <p class="text-slate-600 text-sm mt-2">Discover ancient wooden structures, traditional tea ceremonies, and breathtaking gardens.</p>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-amber-600 font-semibold text-sm">From $2,100</span>
+                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600 transition">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://unsplash.com" alt="Amalfi Coast" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-950">Amalfi Coast, Italy</h3>
+                    <p class="text-slate-600 text-sm mt-2">Sail along dramatic sheer cliffs, explore colorful seaside villages, and enjoy fine dining.</p>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-amber-600 font-semibold text-sm">From $1,850</span>
+                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600 transition">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل وحجز الرحلات -->
+    <section id="contact" class="py-20 bg-slate-950 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold sm:text-4xl">Ready to Plan Your Next Adventure?</h2>
+            <p class="mt-4 text-slate-400 max-w-xl mx-auto">Get in touch with our private travel designers today and receive a tailored itinerary within 24 hours.</p>
+            
+            <form class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 text-left max-w-xl mx-auto">
+                <input type="text" placeholder="Your Name" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 text-white">
+                <input type="email" placeholder="Your Email" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 text-white">
+                <textarea placeholder="Tell us about your dream trip..." rows="4" class="sm:col-span-2 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 text-white"></textarea>
+                <button type="submit" class="sm:col-span-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3.5 rounded-xl transition mt-2">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- أسفل الموقع -->
+    <footer class="bg-slate-950 border-t border-white/5 py-8 text-center text-xs text-slate-500">
