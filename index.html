@@ -1,115 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVEL INSIDER - Luxury Travel Agency</title>
-    <!-- Tailwind CSS CDN المريغل الصحيح -->
-    <script src="https://tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>TRAVEL INSIDER - وكالة أسفار فاخرة</title>
+    <!-- تضمين مكتبة Tailwind CSS -->
+    <script src="https://jsdelivr.net"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
 
-    <!-- Header / Navigation -->
+    <!-- 1. شريط التنقل (HEADER) -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-2xl font-black tracking-wider text-slate-950">TRAVEL<span class="text-amber-600">.</span>INSIDER</a>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#destinations" class="text-sm font-medium text-slate-600 hover:text-slate-950 transition">Destinations</a>
-                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-slate-950 transition">About</a>
-                <a href="#contact" class="bg-slate-950 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-900 transition">Contact Us</a>
+            <!-- الشعار (Logo) -->
+            <a href="#" class="text-2xl font-black tracking-wider text-slate-900">
+                TRAVEL<span class="text-amber-600">INSIDER</span>
+            </a>
+            
+            <!-- روابط التنقل (لأجهزة الكمبيوتر) -->
+            <div class="hidden md:flex items-center space-x-reverse space-x-8">
+                <a href="#destinations" class="text-sm font-bold text-slate-600 hover:text-amber-600 transition-colors">الوجهات</a>
+                <a href="#services" class="text-sm font-bold text-slate-600 hover:text-amber-600 transition-colors">خدماتنا</a>
+                <a href="#testimonials" class="text-sm font-bold text-slate-600 hover:text-amber-600 transition-colors">آراء العملاء</a>
+                <a href="#contact" class="bg-slate-950 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-slate-900 transition-colors">اتصل بنا</a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-slate-950 py-32 px-6 overflow-hidden">
-        <div class="max-w-7xl mx-auto relative z-10 text-center">
-            <span class="text-amber-500 text-sm font-semibold tracking-widest uppercase">Luxury Travel Reimagined</span>
-            <h1 class="text-4xl md:text-6xl font-black text-white mt-4 max-w-3xl mx-auto leading-tight">Discover The World's Most Exclusive Destinations</h1>
-            <p class="text-slate-400 text-lg mt-6 max-w-2xl mx-auto">Bespoke itineraries, luxury accommodations, and unparalleled experiences tailored exclusively for you.</p>
-            <div class="mt-10">
-                <a href="#destinations" class="bg-amber-600 text-white px-8 py-4 rounded-full text-base font-medium hover:bg-amber-500 transition inline-block">Explore Destinations</a>
+    <main>
+        <!-- 2. القسم الرئيسي (HERO SECTION) -->
+        <section class="relative bg-slate-900 text-white min-h-[90vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://unsplash.com" alt="منتجع فاخر" class="w-full h-full object-cover opacity-45">
             </div>
-        </div>
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
-    </section>
 
-    <!-- Destinations Section -->
-    <section id="destinations" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-black text-slate-950">Trending Destinations</h2>
-            <p class="text-slate-600 mt-2">Handpicked luxury escapes curated by our travel experts</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Card 1: Bali -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image/bali.jpg" alt="Bali" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="relative z-10 max-w-5xl mx-auto text-center px-6 space-y-8">
+                <span class="text-amber-400 font-bold tracking-widest uppercase text-sm block">
+                    تجارب سفر فاخرة مصممة خصيصاً لك
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
+                    اكتشف وجهات استثنائية <br> تفوق الخيال
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                    نحن نخطط لرحلات مخصصة للمسافرين الباحثين عن التميز. اكتشف المنتجعات الفاخرة المختارة بعناية، الجزر الخاصة، والجنة المخفية حول العالم.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#destinations" class="w-full sm:w-auto bg-amber-600 text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-amber-500 shadow-lg shadow-amber-600/20 transition-all text-center">
+                        استكشف الوجهات
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full text-sm font-bold hover:bg-white/20 transition-all text-center">
+                        احجز استشارة مجانية
+                    </a>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-slate-950">Tropical Paradise, Bali</h3>
-                    <p class="text-slate-600 text-sm mt-2">Explore pristine beaches, vibrant coral reefs, and ancient temples in this exotic island getaway.</p>
-                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
-                        <span class="text-amber-600 font-semibold text-sm">From $1,200</span>
-                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600">Book Now</a>
+            </div>
+        </section>
+
+        <!-- 3. شريط الإحصائيات (STATS BAR) -->
+        <section class="bg-white border-b border-slate-100 py-12">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl font-black text-slate-900">120+</p>
+                    <p class="text-sm text-slate-500 font-bold mt-1">وجهة عالمية</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-slate-900">12k+</p>
+                    <p class="text-sm text-slate-500 font-bold mt-1">مسافر سعيد</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-slate-900">4.9</p>
+                    <p class="text-sm text-slate-500 font-bold mt-1">تقييم العملاء</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-black text-slate-900">15+</p>
+                    <p class="text-sm text-slate-500 font-bold mt-1">سنة خبرة</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. قسم الوجهات المميزة (FEATURED DESTINATIONS) -->
+        <section id="destinations" class="py-24 max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-amber-600 font-bold text-sm tracking-wider uppercase">ترشيحاتنا لكم</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">أشهر الملاذات الفاخرة</h2>
+                </div>
+                <p class="text-slate-500 max-w-md mt-4 md:mt-0 leading-relaxed">
+                    أماكن ممتازة تم اختيارها بعناية تجمع بين المناظر الطبيعية الخلابة، والضيافة ذات الخمس نجوم، والخصوصية التامة.
+                </p>
+            </div>
+
+            <!-- شبكة البطاقات (Cards Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- البطاقة 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://unsplash.com" alt="جزر المالديف" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-full text-xs font-bold">1,200$ / ليلة</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between text-xs text-slate-400">
+                            <span>جزر المالديف</span>
+                            <span class="text-amber-500 font-bold">★ 4.9</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">منتجع سونيفا جاني المائي</h3>
+                        <p class="text-sm text-slate-500 h-10 overflow-hidden text-ellipsis">استمتع بالبحيرات الكريستالية النقية مع زلاجات مائية خاصة وأسقف قابلة للفتح لمشاهدة النجوم.</p>
+                        <a href="#" class="inline-block text-sm font-bold text-amber-600 hover:text-amber-700">عرض التفاصيل &larr;</a>
+                    </div>
+                </div>
+
+                <!-- 2 البطاقة -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://unsplash.com" alt="سانتوريني" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-full text-xs font-bold">850$ / ليلة</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between text-xs text-slate-400">
+                            <span>اليونان</span>
+                            <span class="text-amber-500 font-bold">★ 4.8</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">أجنحة كالديرا في سانتوريني</h3>
+                        <p class="text-sm text-slate-500 h-10 overflow-hidden text-ellipsis">إطلالات خلابة على غروب الشمس تطل على بحر إيجه مع حمامات سباحة لا متناهية خاصة.</p>
+                        <a href="#" class="inline-block text-sm font-bold text-amber-600 hover:text-amber-700">عرض التفاصيل &larr;</a>
+                    </div>
+                </div>
+
+                <!-- البطاقة 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://unsplash.com" alt="ساحل أمالفي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-full text-xs font-bold">980$ / ليلة</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between text-xs text-slate-400">
+                            <span>إيطاليا</span>
+                            <span class="text-amber-500 font-bold">★ 4.9</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">فيلا بوسيتانو المنحدرة</h3>
+                        <p class="text-sm text-slate-500 h-10 overflow-hidden text-ellipsis">تلتقي الأناقة الإيطالية الكلاسيكية مع الفخامة التاريخية على المنحدرات المطلة على البحر.</p>
+                        <a href="#" class="inline-block text-sm font-bold text-amber-600 hover:text-amber-700">عرض التفاصيل &larr;</a>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Card 2: Kyoto -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image/kyoto.jpg" alt="Kyoto" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-slate-950">Cultural Heritage, Kyoto</h3>
-                    <p class="text-slate-600 text-sm mt-2">Discover ancient wooden structures, traditional teahouses, and stunning cherry blossom gardens.</p>
-                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
-                        <span class="text-amber-600 font-semibold text-sm">From $2,100</span>
-                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600">Book Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3: Amalfi Coast -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image/amalfi.jpg" alt="Amalfi Coast" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-slate-950">Amalfi Coast, Italy</h3>
-                    <p class="text-slate-600 text-sm mt-2">Sail along dramatic sheer cliffs, explore colorful cliffside villages, and enjoy Mediterranean sun.</p>
-                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
-                        <span class="text-amber-600 font-semibold text-sm">From $1,850</span>
-                        <a href="#contact" class="text-sm font-medium text-slate-950 hover:text-amber-600">Book Now</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-slate-950 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-black mb-4">Ready to Plan Your Next Adventure?</h2>
-            <p class="text-slate-400 mb-8 max-w-xl mx-auto">Get in touch with our travel experts and let us orchestrate your perfect luxury getaway.</p>
-            <form class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-                <input type="text" placeholder="Your Name" class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-amber-500 transition col-span-1">
-                <input type="email" placeholder="Your Email" class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-amber-500 transition col-span-1">
-                <button type="submit" class="bg-amber-600 text-white rounded-xl px-6 py-3 font-medium hover:bg-amber-500 transition col-span-1">Get a Quote</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-white/10 py-8 text-center text-sm text-slate-500">
-        <p>&copy; 2026 TRAVEL INSIDER. All rights reserved.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+        <!-- 5. قسم الخدمات ومميزاتنا (SERVICES) -->
+        <section id="services" class="bg-slate-900 text-white py-24">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                <div class="space-y-6">
